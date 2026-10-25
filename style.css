@@ -1,1 +1,115 @@
+*{
+	box-sizing: border-box;
+}
 
+body {
+	margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #102d27, #174b38);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+    .container {
+      padding: 30px;
+      width: 100%;
+      max-width: 650px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #d2e5d8;
+      font-size: 18px;
+    }
+
+    .regalo {
+      font-size: 85px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 45px;
+      min-height: 65px;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 17px 45px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.15s, background 0.2s;
+    }
+
+    #si {
+      background: #238b53;
+    }
+
+    #si:hover {
+      background: #30a967;
+      transform: scale(1.1);
+    }
+
+    #no {
+      background: #c83e49;
+      position: relative;
+      z-index: 10;
+    }
+
+    #no.scappa {
+      position: fixed;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .combinazione {
+      color: #ffd76e;
+      font-size: clamp(25px, 5vw, 40px);
+      margin-top: 30px;
+    }
+
+    kbd {
+      display: inline-block;
+      background: #f5f5f5;
+      color: #173d30;
+      padding: 10px 14px;
+      margin: 5px;
+      border-radius: 8px;
+      box-shadow: 0 5px 0 #aaaaaa;
+      font-size: 20px;
+    }
+
+    .neve {
+      position: fixed;
+      top: -30px;
+      pointer-events: none;
+      animation: caduta linear forwards;
+      opacity: 0.8;
+    }
+
+    @keyframes caduta {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
