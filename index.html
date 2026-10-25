@@ -1,15 +1,65 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-	<title> Buon Natale </title>
-	<meta charset ="utf-8"> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>🎄 Il tuo regalo di Natale</title>
 	<link rel="stylesheet" type="text/css" href="style.css"></style>
-	<script src="script.js"></script>
 </head>
+
 <body>
-	<h1>sium</h1>
-	<p id="mypar"> questo è un paragrafo </p>
-	
-	<button onclick="cambiaStile(mypar)"> bottone </button>
+
+  <!-- SCHERMATA INIZIALE -->
+  <main class="container" id="inizio">
+    <div class="regalo">🎁</div>
+
+    <h1>🎄 Vuoi ricevere il tuo regalo?</h1>
+    <p>Una sorpresa speciale ti aspetta...</p>
+
+    <div class="buttons">
+      <button id="si">SÌ 🎁</button>
+      <button id="no">NO ❌</button>
+    </div>
+  </main>
+
+  <!-- SECONDA SCHERMATA -->
+  <section class="container hidden" id="finale">
+    <div class="regalo">🎅</div>
+
+    <h1>Hai scelto di ricevere il regalo!</h1>
+    <p>Per sbloccare la tua sorpresa natalizia...</p>
+
+    <h2 class="combinazione">
+      Premi questa combinazione:
+    </h2>
+
+    <div>
+      <kbd>CTRL</kbd> +
+      <kbd>ALT</kbd> +
+      <kbd>G</kbd>
+    </div>
+
+    <p style="margin-top: 35px;">
+      🎄 Buon Natale! 🎄
+    </p>
+  </section>
+  
+  <!-- TERZA SCHERMATA -->
+	<section class="container hidden" id="conferma">
+		<div class="regalo">🎉</div>
+
+		<h1>🎁 Regalo sbloccato!</h1>
+
+		<p>
+			Hai premuto correttamente la combinazione di tasti!
+		</p>
+
+		<h2 class="combinazione">
+			🎄 Missione completata! 🎄
+		</h2>
+	</section>
+  
+	<script src="script.js"></script>
 </body>
 </html>
